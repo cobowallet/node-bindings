@@ -168,8 +168,9 @@ exports.getFileName = function getFileName(calling_file) {
   };
 
   // run the 'prepareStackTrace' function above
-  Error.captureStackTrace(dummy);
-  dummy.stack;
+  // comment this to adapt react native
+  // Error.captureStackTrace(dummy);
+  // dummy.stack;
 
   // cleanup
   Error.prepareStackTrace = origPST;
